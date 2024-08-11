@@ -1,3 +1,4 @@
+import 'package:custom_media_picker/media_list_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'package:photo_manager/photo_manager.dart';
@@ -23,6 +24,13 @@ class AlbumListScreen extends StatelessWidget {
                   return Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: ListTile(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    MediaListScreen(album: albumList[index])));
+                      },
                       title: Text(albumList[index].name),
                     ),
                   );
