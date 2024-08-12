@@ -17,7 +17,6 @@ class MediaListScreen extends StatefulWidget {
 class _MediaListScreenState extends State<MediaListScreen> {
   @override
   void initState() {
-    isLoading = true;
     _getImageList();
     super.initState();
   }

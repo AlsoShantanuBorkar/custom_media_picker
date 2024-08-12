@@ -25,11 +25,15 @@ class AlbumListScreen extends StatelessWidget {
                     padding: const EdgeInsets.all(8.0),
                     child: ListTile(
                       onTap: () {
+                        // Navigate to MediaListScreen to display Album Contents.
                         Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>
-                                    MediaListScreen(album: albumList[index])));
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => MediaListScreen(
+                              album: albumList[index],
+                            ),
+                          ),
+                        );
                       },
                       title: Text(albumList[index].name),
                     ),
