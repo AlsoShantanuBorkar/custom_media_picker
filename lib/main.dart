@@ -1,4 +1,4 @@
-import 'package:custom_media_picker/album_list_screen.dart';
+import 'package:custom_media_picker/screens/album_list_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
