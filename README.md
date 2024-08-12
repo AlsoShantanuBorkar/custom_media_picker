@@ -1,3 +1,3 @@
 # custom_media_picker
 
-A new Flutter project.
+Build your own Image/Video picker using photo_manager package to match your app theme!
